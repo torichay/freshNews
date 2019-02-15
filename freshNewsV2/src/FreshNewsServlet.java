@@ -22,7 +22,6 @@ public class FreshNewsServlet extends HttpServlet {
         String hed = new String(contentObj.getHead().getBytes(), "UTF-8");
         String bod = new String(contentObj.getBody().getBytes(), "UTF-8");
 
-        /*request.setCharacterEncoding("UTF-8");*/
         request.setAttribute("header", hed);
         request.setAttribute("body", bod);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
