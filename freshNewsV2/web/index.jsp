@@ -15,9 +15,7 @@
       }
     %>
 
- <%-- <p align="center">--%>
   <center>
-    <%--<textarea rows="7" cols="75" name="text">--%>
       <%
         if(request.getAttribute("body") != null) {
           out.println("<textarea rows=\"7\" cols=\"75\" name=\"text\">" + request.getAttribute("body") + "</textarea>");
@@ -26,8 +24,6 @@
         }
       %>
   </center>
-    <%--  </textarea>--%>
-  <%--</p>--%>
 
   <%
     Random r = new Random();
@@ -65,7 +61,6 @@
 
   </select>
 
-    <%--<button>NEXT</button>--%>
     <input type="submit" value="NEXT">
   </p>
 
